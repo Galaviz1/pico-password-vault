@@ -37,6 +37,8 @@ firmware this Pico already has — no reflashing to CircuitPython.
 
 If the menu moves the wrong way, swap the two pot end pins.
 
+![Wiring diagram](wiring.svg)
+
 ## The two engineering points
 
 **ADC noise needs hysteresis.** A raw `index = reading * n / full` flickers
