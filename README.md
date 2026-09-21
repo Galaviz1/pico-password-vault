@@ -8,6 +8,17 @@ A port of Smurfy_CH's [Password Safe / Keyboard Injector v5](https://www.instruc
 
 ---
 
+## Editions
+
+| Edition | Input | Firmware | Folder |
+| --- | --- | --- | --- |
+| Original port | rotary encoder | CircuitPython | [`device/`](device/) |
+| MicroPython | **B10K pot + button** | MicroPython | [`micropython/`](micropython/) |
+
+The MicroPython edition runs on the firmware this Pico already has (no reflash)
+and swaps the encoder for a potentiometer. Everything below describes the
+CircuitPython port; the MicroPython edition has its own [README](micropython/README.md).
+
 ## Components
 
 You already have the Pico, the 0.91" SSD1306 128×32 OLED, and jumper wires. To finish it you need **one** part:
