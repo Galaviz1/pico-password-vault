@@ -1,0 +1,3 @@
+Example email|user@example.com
+Example password|Demo-Passw0rd!
+Full login (user + tab + pass)|user@example.com	Demo-Passw0rd!
