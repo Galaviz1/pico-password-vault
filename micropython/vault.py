@@ -28,7 +28,10 @@ BOOT_WAIT_S = 180
 IDLE_OFF_S = 30
 
 # ----------------------------------------------------------------- hardware
-i2c = SoftI2C(sda=Pin(0), scl=Pin(1), freq=400_000)
+# 100 kHz, not 400 kHz: longer breadboard jumpers to the display don't hold
+# 400 kHz edges cleanly (a scan then false-ACKs every address). 100 kHz is
+# rock solid and plenty for a 128x32 panel.
+i2c = SoftI2C(sda=Pin(0), scl=Pin(1), freq=100_000)
 oled = SSD1306_I2C(OLED_W, OLED_H, i2c, addr=0x3C)
 pot = ADC(Pin(26))
 button = Pin(4, Pin.IN, Pin.PULL_UP)

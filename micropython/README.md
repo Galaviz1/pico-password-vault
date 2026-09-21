@@ -39,6 +39,8 @@ If the menu moves the wrong way, swap the two pot end pins.
 
 ![Wiring diagram](wiring.svg)
 
+> **I²C runs at 100 kHz.** On breadboard jumpers the display is unreliable at 400 kHz (a scan false-ACKs every address); 100 kHz is solid. `vault.py` is set to 100 kHz.
+
 ## The two engineering points
 
 **ADC noise needs hysteresis.** A raw `index = reading * n / full` flickers
