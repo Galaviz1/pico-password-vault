@@ -39,6 +39,10 @@ If the menu moves the wrong way, swap the two pot end pins.
 
 ![Wiring diagram](wiring.svg)
 
+Breadboard layout (note the button **straddles the centre gap**, wires on **diagonal** legs):
+
+![Breadboard layout](breadboard.svg)
+
 > **I²C runs at 100 kHz.** On breadboard jumpers the display is unreliable at 400 kHz (a scan false-ACKs every address); 100 kHz is solid. `vault.py` is set to 100 kHz.
 
 ## The two engineering points
